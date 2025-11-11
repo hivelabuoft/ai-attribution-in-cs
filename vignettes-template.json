@@ -1,0 +1,50 @@
+[
+  {
+    "id": 3,
+    "course": "FILL IN: Brief course description (e.g., 'A third-year database systems course')",
+    "assignedTask": "FILL IN: What the instructor assigned",
+    "vignette": "FILL IN: Full scenario description of what the student did, including whether they used AI and how"
+  },
+  {
+    "id": 4,
+    "course": "",
+    "assignedTask": "",
+    "vignette": ""
+  },
+  {
+    "id": 5,
+    "course": "",
+    "assignedTask": "",
+    "vignette": ""
+  },
+  {
+    "id": 6,
+    "course": "",
+    "assignedTask": "",
+    "vignette": ""
+  },
+  {
+    "id": 7,
+    "course": "",
+    "assignedTask": "",
+    "vignette": ""
+  },
+  {
+    "id": 8,
+    "course": "",
+    "assignedTask": "",
+    "vignette": ""
+  },
+  {
+    "id": 9,
+    "course": "",
+    "assignedTask": "",
+    "vignette": ""
+  },
+  {
+    "id": 10,
+    "course": "",
+    "assignedTask": "",
+    "vignette": ""
+  }
+]

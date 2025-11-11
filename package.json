@@ -1,0 +1,13 @@
+{
+  "name": "vignette-generator",
+  "version": "1.0.0",
+  "description": "Generate AI attribution vignette pages",
+  "type": "module",
+  "scripts": {
+    "generate": "node generate-vignette.js"
+  },
+  "dependencies": {
+    "openai": "^4.20.1",
+    "dotenv": "^16.3.1"
+  }
+}

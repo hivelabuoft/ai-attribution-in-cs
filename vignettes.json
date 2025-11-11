@@ -1,0 +1,590 @@
+[
+  {
+    "id": 5,
+    "course": "An introductory course on cybersecurity.",
+    "assignedTask": "The assignment was to create a basic threat model for a simple web application described in the prompt.",
+    "vignette": "For an introductory cybersecurity class, students had to create a threat model. A student started by creating a draft data flow diagram showing the main components of the application, but it was incomplete and had not yet been analyzed for threats. To perform the quality assurance part of the assignment, the student manually applied the STRIDE framework as a checklist. Without using any AI, they went through their own draft, systematically reviewing each component and data flow for potential Spoofing, Tampering, Repudiation, and other vulnerabilities. They added annotations directly onto their diagram, identifying weaknesses based on their own analysis."
+  },
+  {
+    "id": 6,
+    "course": "A course on systems design focusing on APIs.",
+    "assignedTask": "Students were to create a REST API specification document for a booking system.",
+    "vignette": "In a systems design course, a student completed a detailed REST API specification document that was fully functional and met all project requirements. Before submitting, they wanted to ensure it adhered to professional standards. For this review and quality assurance step, they used their IDE's integrated OpenAPI specification linter, a non-generative tool. The linter automatically checked their design document for syntax errors, inconsistent data types, and missing fields. The student manually fixed the handful of validation errors the linter reported, improving the technical quality and consistency of their already-working design without any AI assistance."
+  },
+  {
+    "id": 7,
+    "course": "An undergraduate course on Artificial Intelligence and Machine Learning.",
+    "assignedTask": "Students needed to design an experiment plan to compare two different machine learning models.",
+    "vignette": "In an AI/ML course, the assignment was to create a plan for an experiment to evaluate a new classification model. Starting from scratch with no working plan, the student was unsure which evaluation metrics were most appropriate for an imbalanced dataset. They used an AI assistant to ask conceptual questions, such as, \"Explain the difference between precision-recall and ROC curves.\" The AI's text explained the trade-offs, but none of it was copied. Based on this improved understanding, the student then planned their experiment from scratch, choosing the F1-score as their primary metric and outlining the justification in their own words."
+  },
+  {
+    "id": 8,
+    "course": "An undergraduate course on Artificial Intelligence and Machine Learning.",
+    "assignedTask": "Students needed to design an experiment plan to compare two different machine learning models.",
+    "vignette": "In an AI/ML course, the assignment was to create a plan for an experiment to evaluate a new classification model. Starting from scratch with no working plan, the student was unsure which evaluation metrics were most appropriate for an imbalanced dataset. They asked an AI assistant, \"Explain the difference between precision-recall and ROC curves.\" The AI's text explained the trade-offs, and the student then engaged in an iterative dialogue, asking the AI for specific examples and clarifications. Based on this synthesized understanding, they planned their experiment, choosing the F1-score as their primary metric and outlining the justification in their own words."
+  },
+  {
+    "id": 9,
+    "course": "A course on software architecture.",
+    "assignedTask": "Students had to create a design document for a system and justify their chosen architectural pattern.",
+    "vignette": "A student in a software architecture course had already designed a complete and viable system using a client-server model. To better prepare the justification section of their report, they used an AI chatbot for conceptual planning. They asked the AI to explain the primary trade-offs of the client-server pattern compared to a peer-to-peer model. The AI provided a summary of concepts like scalability and centralization. The student did not use any of the AI's text directly, but the explanation helped them to frame their own arguments and conceptualize the concluding section of their design document more effectively."
+  },
+  {
+    "id": 10,
+    "course": "A course on software architecture.",
+    "assignedTask": "Students had to create a design document for a system and justify their chosen architectural pattern.",
+    "vignette": "A student in a software architecture course had already designed a complete and viable system using a client-server model. To better prepare their report's justification, they used an AI chatbot for conceptual planning. They asked the AI to explain the trade-offs of the client-server pattern versus a peer-to-peer model, and the AI provided a summary covering scalability and centralization. The student then began a follow-up dialogue, asking for industry examples and counterarguments for each point. By synthesizing these additional details, the student framed their arguments in their own words, helping them conceptualize the concluding section of their design document more effectively."
+  },
+  {
+    "id": 11,
+    "course": "An introductory course on database systems.",
+    "assignedTask": "The assignment required creating a relational schema in 3rd Normal Form (3NF) for a university registration system.",
+    "vignette": "In an introductory database systems course, the assignment was to create a relational schema in 3rd Normal Form. Starting from scratch with no working design, the student was unsure how to represent the many-to-many relationship between 'Students' and 'Courses'. They asked an AI assistant to explain the concept of a join table. The AI described using a third table with foreign keys linking back to the student and course tables. Based on this initial explanation, the student proceeded to manually author the CREATE TABLE statements for the 'Students', 'Courses', and a new 'Enrollments' join table, directly applying the described technique."
+  },
+  {
+    "id": 12,
+    "course": "An introductory course on database systems.",
+    "assignedTask": "The assignment required creating a relational schema in 3rd Normal Form (3NF) for a university registration system.",
+    "vignette": "In an introductory database systems course, a student was assigned to design a relational schema in 3rd Normal Form. Starting from scratch, they were unsure how to model the many-to-many relationship between 'Students' and 'Courses'. They asked an AI assistant to explain the concept of a join table. After reviewing the initial answer, the student posed multiple follow-up questions about defining a composite primary key for that table. By synthesizing the AI's responses, they proceeded to manually author the CREATE TABLE statements for the 'Students', 'Courses', and 'Enrollments' table."
+  },
+  {
+    "id": 13,
+    "course": "A course in HCI and UX design.",
+    "assignedTask": "Students were required to refine a user flow diagram to make it more efficient.",
+    "vignette": "In an introductory database systems course, the assignment was to create a relational schema in 3rd Normal Form. Starting from scratch with no working design, the student was unsure how to represent the many-to-many relationship between 'Students' and 'Courses'. They asked an AI assistant to explain the concept of a join table. After reviewing the AI's first answer, the student asked follow-up questions to clarify how to define a composite primary key and handle additional attributes, like a grade, in the join table. Using the more nuanced understanding from this interaction, the student then proceeded to manually author the CREATE TABLE statements for all required tables."
+  },
+  {
+    "id": 14,
+    "course": "A course in HCI and UX design.",
+    "assignedTask": "Students were required to refine a user flow diagram to make it more efficient.",
+    "vignette": "In a UX design course, a student began with their own complete and logical user flow diagram for a food delivery app but felt the checkout process was too complex. To get ideas for refinement, they used an AI assistant for an explanation of Jakob Nielsen's usability heuristics, specifically those on minimizing user memory load. After understanding the general principle, the student began the production task of manually redesigning the payment section. This required significant effort to integrate the concept, as they had to reconcile the simplified flow with features like 'apply coupon' and 'guest checkout'. They redrew and evaluated several versions before finalizing a new design that consolidated three screens into one."
+  },
+  {
+    "id": 15,
+    "course": "A third-year course on operating systems.",
+    "assignedTask": "Students were asked to design a deadlock-free solution to a resource allocation problem using pseudocode.",
+    "vignette": "In a third-year operating systems course, a student created a rough pseudocode draft for a resource allocation problem. To check for deadlocks, they described their approach to an AI and asked for the four necessary conditions. The AI listed mutual exclusion, hold and wait, no preemption, and circular wait. The student used this list as a direct checklist. They identified a potential circular wait in their draft and manually applied a standard textbook solution to enforce resource ordering, correcting that single issue."
+  },
+  {
+    "id": 16,
+    "course": "A third-year course on operating systems.",
+    "assignedTask": "Students were asked to design a deadlock-free solution to a resource allocation problem using pseudocode.",
+    "vignette": "In a third-year operating systems course, a student created a rough pseudocode draft for a resource allocation problem. To check for deadlocks, they described their approach to an AI and asked for the four necessary conditions. The AI listed mutual exclusion, hold and wait, no preemption, and circular wait. The student then engaged in a dialogue with the AI, asking for clarification on how these conditions might interact. After synthesizing the nuanced explanations, they performed a thorough manual review of their entire draft, refactoring the logic to prevent multiple potential race conditions, not just circular wait."
+  },
+  {
+    "id": 17,
+    "course": "A data structures and algorithms course.",
+    "assignedTask": "The task was to create a comprehensive test plan for a given recursive algorithm.",
+    "vignette": "For an algorithms course, a student had already written a complete test plan for a recursive string-matching algorithm they believed was correct. To improve its quality, they performed a final review with AI assistance. They asked an AI assistant, \"What are some common edge cases to test for in recursive functions?\" The AI suggested testing the base case, null inputs, and inputs that could lead to maximum recursion depth. Using the AI's response as a checklist, the student identified that their plan was missing coverage for null inputs. They then directly added a new test case for an empty input string to their document."
+  },
+  {
+    "id": 18,
+    "course": "A data structures and algorithms course.",
+    "assignedTask": "The task was to create a comprehensive test plan for a given recursive algorithm.",
+    "vignette": "For an algorithms course, a student had already written a complete test plan for a recursive string-matching algorithm they believed was correct. To improve its quality, they performed a final review with AI assistance. They asked an AI assistant, \"What are some common edge cases to test for in recursive functions?\" The AI suggested testing the base case, null inputs, and inputs that could lead to maximum recursion depth. Inspired by the 'maximum recursion depth' suggestion, the student then manually analyzed their specific algorithm's behavior. They invested effort to devise a novel input with a complex repeating pattern, specifically designed to stress the recursion limit, and wrote a new, intricate test case from scratch."
+  },
+  {
+    "id": 19,
+    "course": "An introductory database design course.",
+    "assignedTask": "Students were tasked with creating an Entity-Relationship (ER) diagram for a library management system.",
+    "vignette": "In an introductory database design course, a student was tasked with creating an Entity-Relationship (ER) diagram for a library management system from scratch. While they had designed the 'Book' and 'Member' entities, they were uncertain how to model overdue fines. The student prompted an AI assistant to generate a small ER diagram fragment showing a 'Fine' entity and its relationships. The AI produced a fragment connecting 'Fine' to 'Member' and 'BookCopy'. The student reviewed the generated graphic, confirmed it represented the required relationships, and incorporated the small fragment directly into their larger diagram to complete that part of the deliverable."
+  },
+  {
+    "id": 20,
+    "course": "An introductory database design course.",
+    "assignedTask": "Students were tasked with creating an Entity-Relationship (ER) diagram for a library management system.",
+    "vignette": "In an introductory database design course, a student was tasked with creating an Entity-Relationship (ER) diagram for a library management system from scratch. While they had designed the 'Book' and 'Member' entities, they were uncertain how to model overdue fines. The student prompted an AI assistant to generate a small ER diagram fragment showing a 'Fine' entity and its relationships. The AI produced a fragment connecting 'Fine' to 'Member' and 'BookCopy'. The student reviewed the output but decided the logic was incomplete. They manually edited the fragment, adding a 'status' attribute to the 'Fine' entity and changing its relationship to link to a 'Loan' entity instead, better reflecting how fines are issued. This significant revision was then integrated into their larger diagram."
+  },
+  {
+    "id": 21,
+    "course": "An upper-division course in software architecture.",
+    "assignedTask": "The assignment required creating and documenting a system's architecture using UML diagrams and descriptive text.",
+    "vignette": "In a software architecture course, the assignment required creating a system design document with UML diagrams. A student had already completed a UML sequence diagram that correctly modeled a user login process and had written a descriptive paragraph for it. To improve clarity, the student prompted an AI assistant to rewrite their verbose paragraph, and the AI generated a concise, two-sentence description of the diagram's flow. After reviewing the generated text for accuracy, the student replaced their original paragraph with the AI's output, directly inserting it into the final document."
+  },
+  {
+    "id": 22,
+    "course": "An upper-division course in software architecture.",
+    "assignedTask": "The assignment required creating and documenting a system's architecture using UML diagrams and descriptive text.",
+    "vignette": "In a software architecture course, the assignment required creating a system design document with UML diagrams. A student had already completed a UML sequence diagram that correctly modeled a user login process and had written a descriptive paragraph for it. To improve clarity, the student prompted an AI assistant to rewrite their verbose paragraph, and the AI generated a concise, two-sentence description of the diagram's flow. After reviewing the generated text, the student manually edited the AI's suggestion, rewriting one sentence and integrating technical terms from their own draft before inserting the revised paragraph into the final document."
+  },
+  {
+    "id": 23,
+    "course": "A senior-level software engineering course.",
+    "assignedTask": "The assignment was to create a design document for a new feature in a large software project.",
+    "vignette": "A student in a software engineering course was writing a design document for a new feature and had a rough draft of the architecture. To ensure their design was robust, they performed a quality assurance check by asking an AI to \"generate a short checklist for a good API design,\" which resulted in a 4-item list about consistency and error handling. The student copied the generated checklist directly into their document's appendix. They then used it to review their drafted design, adding notes to their document where improvements were needed to meet the checklist criteria."
+  },
+  {
+    "id": 24,
+    "course": "A senior-level software engineering course.",
+    "assignedTask": "The assignment was to create a design document for a new feature in a large software project.",
+    "vignette": "A student in a software engineering course was writing a design document for a new feature and had a rough draft of the architecture. To ensure their design was robust, they performed a quality assurance check by asking an AI to \"generate a short checklist for a good API design,\" which resulted in a 4-item list about consistency and error handling. The student manually edited the list, adding two project-specific items and rephrasing another to match their team's conventions. This revised checklist was then placed in the document's appendix, and they used it to review their drafted design."
+  },
+  {
+    "id": 25,
+    "course": "A computer networks course.",
+    "assignedTask": "Students needed to design a specification for a simple file transfer protocol.",
+    "vignette": "In a computer networks course, a student had a complete and working design specification for a new file transfer protocol. Seeking to improve the document's quality assurance, they decided to add a more specific test case. They prompted an AI assistant to generate a short paragraph describing how the protocol should handle a dropped connection mid-transfer. After a quick review, the student copied the paragraph into their document's 'Testing Strategy' section, making no substantive changes to the text. This addition enhanced the document's review component without altering the core protocol design."
+  },
+  {
+    "id": 26,
+    "course": "A computer networks course.",
+    "assignedTask": "Students needed to design a specification for a simple file transfer protocol.",
+    "vignette": "In a computer networks course, a student had a complete and working design specification for a new file transfer protocol. Seeking to improve the document's quality assurance, they decided to add a more specific test case. They prompted an AI assistant to generate a short paragraph describing how the protocol should handle a dropped connection mid-transfer. Using the AI's output as a foundation, the student then significantly rewrote the paragraph, manually adding specific error codes and clarifying the client-server re-transmission logic. This refined test case enhanced the document's review component without altering the core protocol design."
+  },
+  {
+    "id": 27,
+    "course": "An advanced course on HCI and UX design.",
+    "assignedTask": "Students were assigned to produce a complete set of UX wireframes for an app's user profile section.",
+    "vignette": "In an advanced UX design course, a student was tasked with creating wireframes for a user profile feature. Starting with only a brief prompt, they used an AI-powered design tool, instructing it to \"generate a complete user profile section including 'view profile', 'edit profile', and 'change password' screens.\" The tool produced a set of five interconnected, high-fidelity wireframes with standard UI elements. The student reviewed the generated screens and found they met the assignment's core requirements. They submitted this set of wireframes directly, making little manual edits to the layout or components."
+  },
+  {
+    "id": 28,
+    "course": "An advanced course on HCI and UX design.",
+    "assignedTask": "Students were assigned to produce a complete set of UX wireframes for an app's user profile section.",
+    "vignette": "In an advanced UX design course, a student was tasked with creating wireframes for a user profile feature. Starting with only a brief prompt, they used an AI-powered design tool, instructing it to \"generate a complete user profile section including 'view profile', 'edit profile', and 'change password' screens.\" The tool produced a set of five interconnected, high-fidelity wireframes with standard UI elements. The student used these wireframes as a foundation for substantial manual revisions. They redesigned the layout of two screens for better accessibility, replaced several generic UI elements, and added a new wireframe for privacy settings."
+  },
+  {
+    "id": 29,
+    "course": "A special topics course in advanced database systems.",
+    "assignedTask": "The assignment was to translate an existing, correct relational schema into a functionally equivalent graph database schema.",
+    "vignette": "A student in an advanced database course was given a working multi-table SQL schema for a social network. The assignment required them to redesign it for a graph database. The student fed the entire SQL schema into an AI agent, instructing it to \"convert this relational schema into a property graph model, defining the node labels, properties, and relationship types.\" The agent produced a complete specification for the graph schema, including definitions for 'User' and 'Post' nodes and 'FRIENDS_WITH' and 'AUTHORED' relationships. The student reviewed the generated design and copied the full specification into their submission with only minor formatting changes."
+  },
+  {
+    "id": 30,
+    "course": "A special topics course in advanced database systems.",
+    "assignedTask": "The assignment was to translate an existing, correct relational schema into a functionally equivalent graph database schema.",
+    "vignette": "A student in an advanced database course was given a working multi-table SQL schema for a social network. The assignment required them to redesign it for a graph database. The student fed the entire SQL schema into an AI agent, instructing it to \"convert this relational schema into a property graph model, defining the node labels, properties, and relationship types.\" The agent produced a complete specification for the graph schema, including definitions for 'User' and 'Post' nodes and 'FRIENDS_WITH' and 'AUTHORED' relationships. The student then manually edited the schema, adding a new 'Comment' node and a 'COMMENTED_ON' relationship before submitting the revised design."
+  },
+  {
+    "id": 31,
+    "course": "A capstone course in software engineering.",
+    "assignedTask": "Teams needed to perform a peer review of another team's initial system architecture design document.",
+    "vignette": "In a software engineering capstone, a team was assigned to review another team's draft architecture document. Starting with no prior review, their quality assurance task involved uploading the entire document to an AI agent. They prompted it to identify architectural inconsistencies, potential bottlenecks, and unclear explanations. The AI generated a detailed, two-page critique covering multiple aspects of the design. After a brief read-through, the team submitted this AI-generated report directly as their completed peer review deliverable."
+  },
+  {
+    "id": 32,
+    "course": "A capstone course in software engineering.",
+    "assignedTask": "Teams needed to perform a peer review of another team's initial system architecture design document.",
+    "vignette": "In a software engineering capstone, a team was assigned to review another team's draft architecture document. Starting with no prior review, their quality assurance task involved uploading the entire document to an AI agent. They prompted it to identify architectural inconsistencies, potential bottlenecks, and unclear explanations. The AI generated a detailed, two-page critique covering multiple aspects of the design. The team used this report as a starting point, manually verifying each finding, rewriting sections to add their own insights, and restructuring the content before submitting their heavily edited review."
+  },
+  {
+    "id": 33,
+    "course": "A graduate course in information security.",
+    "assignedTask": "Students were to create a system design and then produce a comprehensive test plan to validate its security.",
+    "vignette": "In a graduate course on information security, students were tasked with creating a test plan to validate their system design. A student with an already-complete design for an online banking portal submitted it to an AI agent, instructing it to \"act as a security analyst and generate a comprehensive penetration test plan.\" The AI produced a multi-page document with test cases for vulnerabilities like SQL injection and cross-site scripting. After reviewing the generated plan for relevance, the student formatted the document and incorporated it directly into their final submission."
+  },
+  {
+    "id": 34,
+    "course": "A graduate course in information security.",
+    "assignedTask": "Students were to create a system design and then produce a comprehensive test plan to validate its security.",
+    "vignette": "In a graduate course on information security, students were tasked with creating a test plan to validate their system design. A student with an already-complete design for an online banking portal submitted it to an AI agent, instructing it to \"act as a security analyst and generate a comprehensive penetration test plan.\" The AI produced a multi-page document with test cases for vulnerabilities like SQL injection and cross-site scripting. Using this output as a foundation, the student then manually rewrote several sections to align with their project's specific threat model and added new, custom test cases for the portal's unique multi-factor authentication logic."
+  },
+  {
+    "id": 35,
+    "course": "A third-year course on scripting for system administration.",
+    "assignedTask": "Students were assigned to write a shell script to automate the process of finding and compressing log files older than 30 days.",
+    "vignette": "In a course on system administration, the assignment was to write a shell script to clean up old log files. The student started from scratch with no working code. Before writing a single line of the script, they first engaged in conceptual planning by outlining the logic on a whiteboard. They decomposed the problem into steps: find files by name pattern, filter them by modification date, loop through the results, and execute a compression command on each. This manual, AI-free planning stage produced a clear flowchart, which served as a blueprint for the subsequent implementation work."
+  },
+  {
+    "id": 36,
+    "course": "A course on data structures and algorithms.",
+    "assignedTask": "The assignment was to implement a function to find the median of two sorted arrays.",
+    "vignette": "For an algorithms course, a student had already implemented a correct and working solution that merged two arrays and found the median. While this approach passed all tests, its time complexity was suboptimal. The student then paused implementation for more conceptual planning. Without using AI, they read the textbook and worked on paper to understand a more efficient, binary-search-based approach. This conceptual exploration was about discovering a better algorithm and did not involve changing their existing code, but rather deciding whether a complete rewrite was feasible and worthwhile for extra credit."
+  },
+  {
+    "id": 37,
+    "course": "A second-year introductory data structures course.",
+    "assignedTask": "Students were asked to implement a basic Queue class from scratch using a linked list.",
+    "vignette": "In a second-year data structures course, the assignment was to implement a Queue class using a linked list foundation. Starting with an empty file, the student manually authored the entire implementation based on lecture notes. The work was purely production-focused: they first wrote the Node class, then the Queue class itself, including the enqueue, dequeue, and peek methods. They did not use any generative AI, relying only on their IDE's basic syntax highlighting and autocomplete features. The final deliverable was the .java file containing their From-scratch(not enough) implementation."
+  },
+  {
+    "id": 38,
+    "course": "A course on web development.",
+    "assignedTask": "The assignment involved adding new functionality to a given base web application.",
+    "vignette": "In a web development class, a student started with a provided web application that had a working user login system. The assignment was to add a new feature: a password reset function. The student performed this task by making a direct production change to the codebase. They manually wrote a new route handler in the backend server, created a corresponding HTML template for the user to enter their email, and implemented the logic to generate and send a reset token. No AI was used; the student substantively modified the working application to add the required functionality."
+  },
+  {
+    "id": 39,
+    "course": "An introductory programming course (CS1).",
+    "assignedTask": "Students needed to write a program that calculates final grades based on a list of scores, but it contained a logical error.",
+    "vignette": "In a CS1 course, a student wrote a program to calculate grades. Their code compiled but was producing incorrect averages, meaning it was a non-working draft. To find the bug, the student engaged in a quality assurance process without any AI assistance. They used the interactive debugger built into their IDE. By setting breakpoints and stepping through their code line-by-line, they were able to watch the values of their variables. This review process allowed them to discover a critical off-by-one error in their main calculation loop, which they then fixed manually."
+  },
+  {
+    "id": 40,
+    "course": "A scientific computing course.",
+    "assignedTask": "The goal was to implement a numerical simulation that was functionally correct but running too slowly.",
+    "vignette": "In a scientific computing class, a student wrote a simulation program that produced the correct output and passed all functional tests. However, the program was too slow to be practical for large datasets. To address this, the student focused on review and performance tuning. Using their IDE's integrated profiler, a non-generative tool, they analyzed their code's runtime behavior and identified a specific function with nested loops as the primary bottleneck. They then manually refactored that section of code, replacing the loops with a more efficient vectorized NumPy operation, significantly improving performance."
+  },
+  {
+    "id": 41,
+    "course": "A web programming course.",
+    "assignedTask": "Students were asked to write a Python script to scrape data from a public website.",
+    "vignette": "In a web programming course, the task was to write a web scraper. Before starting to code, the student was concerned about the appropriate way to access website data. They used an AI chatbot for conceptual planning, asking, \"What is the purpose of a robots.txt file and how do I respect it?\" The AI explained the protocol for ethical web scraping. Based directly on this initial explanation, the student manually planned their script to first check the robots.txt file of the target site and to include delays between requests, forming their implementation strategy."
+  },
+  {
+    "id": 42,
+    "course": "A web programming course.",
+    "assignedTask": "Students were asked to write a Python script to scrape data from a public website.",
+    "vignette": "In a web programming course, the task was to write a web scraper. Before starting to code, the student was concerned about the appropriate way to access website data. They used an AI chatbot for conceptual planning, asking, \"What is the purpose of a robots.txt file and how do I respect it?\" After reviewing the initial answer, the student posed follow-up questions about handling sites without a robots.txt file and how to interpret specific directives. By integrating the information from this dialogue, the student manually planned their script to handle these additional cases, forming a more robust implementation strategy."
+  },
+  {
+    "id": 43,
+    "course": "A data science course.",
+    "assignedTask": "Students needed to perform data analysis and cleaning on a provided dataset using Python.",
+    "vignette": "In a data science course, a student had a fully working Jupyter notebook that used the pandas library to clean and analyze a dataset. Although their code passed all tests, they wondered if a different library might be more efficient. They used an AI assistant for a conceptual query, asking about the advantages of the Polars library. The AI's response explained that Polars uses parallel processing, which can make it faster. The student then concluded that Polars would be a superior choice and added a note to their project report suggesting it as a future optimization, citing the reason given by the AI."
+  },
+  {
+    "id": 44,
+    "course": "A data science course.",
+    "assignedTask": "Students needed to perform data analysis and cleaning on a provided dataset using Python.",
+    "vignette": "In a data science course, a student had a fully working Jupyter notebook that used the pandas library to clean and analyze a dataset. Although their code passed all tests, they wondered if a different library might be more efficient. They used an AI assistant for a conceptual query, asking about the advantages of the Polars library. The AI's response explained that Polars uses parallel processing, which can make it faster. The student then engaged in an iterative dialogue, asking about trade-offs and when pandas might still be preferred. After this, they independently wrote a small script to benchmark a key function from their notebook using both libraries, confirming the performance implications for their specific use case."
+  },
+  {
+    "id": 45,
+    "course": "An introductory course on databases.",
+    "assignedTask": "The assignment was to write a SQL query to retrieve data from multiple related tables.",
+    "vignette": "In an intro to databases course, a student needed to write a complex SQL query joining three tables. Starting with an empty editor, they were unsure about the correct syntax for a LEFT JOIN. The student asked an AI chatbot to \"explain the difference between an INNER JOIN and a LEFT JOIN in SQL.\" After reviewing the AI's text explanation and its example, they returned to their SQL client. The student then manually authored the full query, directly applying the structure from the AI's explanation to join the tables correctly."
+  },
+  {
+    "id": 46,
+    "course": "An introductory course on databases.",
+    "assignedTask": "The assignment was to write a SQL query to retrieve data from multiple related tables.",
+    "vignette": "In an intro to databases course, a student needed to write a complex SQL query joining three tables. Starting with an empty editor, they were unsure about the correct syntax for a LEFT JOIN. The student asked an AI chatbot to \"explain the difference between an INNER JOIN and a LEFT JOIN in SQL.\" After reviewing the AI's text explanation and its example, they made an initial attempt at the query. Their first version had a logical error, so the student spent time manually debugging and rewriting parts of their join condition to produce the correct output."
+  },
+  {
+    "id": 47,
+    "course": "A second-year programming course (CS2).",
+    "assignedTask": "Students were asked to extend a working program to include robust file I/O operations.",
+    "vignette": "In a CS2 course, a student had a fully working program that processed data. The next task was to add error handling for file operations. The student asked an AI assistant, \"What is the standard way to handle file-not-found errors in Python?\" The AI explained the try...except FileNotFoundError block and its purpose. Based on this direct explanation, the student made a production change to their code. They manually wrapped their open() call in the standard try...except block, making their program more robust without copying any AI-generated code."
+  },
+  {
+    "id": 48,
+    "course": "A second-year programming course (CS2).",
+    "assignedTask": "Students were asked to extend a working program to include robust file I/O operations.",
+    "vignette": "In a CS2 course, a student had a fully working program that processed data. The next task was to add error handling for file operations. The student asked an AI assistant, \"What is the standard way to handle file-not-found errors in Python?\" The AI explained the try...except FileNotFoundError block. The student then posed a follow-up query about handling other I/O issues, like permission errors. After the AI explained how to catch multiple exceptions, the student integrated these concepts. They manually wrote a single try...except block to gracefully handle both FileNotFoundError and PermissionError with distinct messages."
+  },
+  {
+    "id": 49,
+    "course": "A course on systems programming.",
+    "assignedTask": "Students were to implement a program using pointers in C++, but it was producing a segmentation fault.",
+    "vignette": "In a systems programming course, a student's C++ program consistently crashed with a segmentation fault. Starting with a non-working implementation, they pasted the error message into an AI assistant to ask for common causes. The AI's text explained several potential issues, with null pointer dereferencing being a primary one. The student focused on this suggestion, returned to their code, and began a targeted review specifically checking for uninitialized pointers. This direct approach led them to the null pointer issue, which they then fixed."
+  },
+  {
+    "id": 50,
+    "course": "A course on systems programming.",
+    "assignedTask": "Students were to implement a program using pointers in C++, but it was producing a segmentation fault.",
+    "vignette": "In a systems programming course, a student's C++ program consistently crashed with a segmentation fault. Starting with a non-working implementation, they pasted the error message into an AI assistant to ask for common causes. The AI's text explained general concepts like null pointer dereferencing and buffer overflows. Using these categories as a guide, the student initiated a deeper manual investigation by adding print statements to their code to trace variable states and pointer values. This self-directed debugging process, informed by the AI's explanation, helped them isolate and fix the null pointer issue."
+  },
+  {
+    "id": 51,
+    "course": "A Python for data science course.",
+    "assignedTask": "Students were asked to write a script to process data, which was already working correctly.",
+    "vignette": "In a data science course, a student had written a working Python script that used a complex, nested list comprehension to filter data. While functional, they worried it was hard to read and wanted to improve it for a quality review. They asked an AI assistant, \"What are some general strategies to make a complex Python list comprehension more readable?\" The AI suggested breaking it down into multiple lines or using a standard for loop. Following this advice, the student manually rewrote the list comprehension as a conventional multi-line for loop, directly applying one of the AI's suggested strategies to improve maintainability."
+  },
+  {
+    "id": 52,
+    "course": "A Python for data science course.",
+    "assignedTask": "Students were asked to write a script to process data, which was already working correctly.",
+    "vignette": "In a data science course, a student had a working Python script that used a complex, nested list comprehension. Concerned it was hard to read, they sought to improve its quality. The student asked an AI assistant for ways to make the code more readable, and the AI's explanation suggested refactoring it into a standard for loop. Using this as a starting point, the student engaged in an iterative process, asking the AI for the pros and cons of using a helper function versus a loop. Based on the trade-offs discussed, the student developed their own solution by writing a new, separate helper function to contain the complex logic, which they then called from inside a simple for loop, making the final code more modular and maintainable."
+  },
+  {
+    "id": 53,
+    "course": "A web development course.",
+    "assignedTask": "Students had to implement a user registration form that included input validation.",
+    "vignette": "In a web development course, students were assigned to implement a user registration form with input validation. Starting the email validation part from scratch, a student used an AI tool to generate a regular expression. The AI provided a regex string and a short JavaScript function—about 10 lines—to perform the check. After a brief review confirmed it handled a common email format, the student integrated the generated function directly into their project's script to handle the validation logic."
+  },
+  {
+    "id": 54,
+    "course": "A web development course.",
+    "assignedTask": "Students had to implement a user registration form that included input validation.",
+    "vignette": "In a web development course, students were assigned to implement a user registration form with input validation. Starting the email validation part from scratch, a student used an AI tool to generate a regular expression. The AI provided a regex string and a short JavaScript function—about 10 lines—to perform the check. The student then manually tested the snippet with several edge cases, discovering it failed on newer domain extensions. To fix this, they significantly modified the regular expression and refactored the function to make it more robust before integrating it into their project."
+  },
+  {
+    "id": 55,
+    "course": "A data analysis course.",
+    "assignedTask": "The assignment was to add a data export feature to an existing data processing script.",
+    "vignette": "In a data analysis course, a student had a Python script that correctly performed calculations on a dataset. The assignment required them to add a new feature: exporting the final results to a CSV file. The student prompted an AI assistant to \"write a Python function that takes a list of dictionaries and a filename, and saves the data to a CSV.\" The AI generated a self-contained function of about 20 lines using Python's csv module. The student then integrated the function into their existing script, calling it with the correct variables to complete the production task."
+  },
+  {
+    "id": 56,
+    "course": "A data analysis course.",
+    "assignedTask": "The assignment was to add a data export feature to an existing data processing script.",
+    "vignette": "In a data analysis course, a student had a Python script that correctly performed calculations on a dataset. The assignment required them to add a new feature: exporting the final results to a CSV file. The student prompted an AI assistant to \"write a Python function that takes a list of dictionaries and a filename, and saves the data to a CSV.\" The AI generated a self-contained function of about 20 lines using Python's csv module. After reviewing the code, the student manually added error handling for file I/O issues and refactored the function to better match the style of their existing script before integrating it to complete the production task."
+  },
+  {
+    "id": 57,
+    "course": "A course on data structures and algorithms.",
+    "assignedTask": "Students were asked to implement an insertion sort algorithm, but their version had a bug.",
+    "vignette": "In a data structures course, a student's implementation of insertion sort was not working correctly, failing a test case. Having a non-working solution, they isolated the broken inner loop, a block of about 10 lines of code. As part of their debugging process, they provided this snippet to an AI assistant, asking it to find the error. The AI generated a corrected version of the loop with a fix to the boundary condition. The student directly substituted their broken loop with the AI-generated code, and the new implementation passed the test."
+  },
+  {
+    "id": 58,
+    "course": "A course on data structures and algorithms.",
+    "assignedTask": "Students were asked to implement an insertion sort algorithm, but their version had a bug.",
+    "vignette": "In a data structures course, a student's implementation of insertion sort was not working correctly, failing a test case. Having a non-working solution, they isolated the broken inner loop, a block of about 10 lines of code. As part of their debugging process, they provided this snippet to an AI assistant, asking it to find the error. The AI generated a corrected version of the loop with a fix to the boundary condition. The student studied the suggestion to understand the logical error, then returned to their original code and manually rewrote the loop to apply the correct logic in their own style."
+  },
+  {
+    "id": 59,
+    "course": "A course on high-performance computing.",
+    "assignedTask": "The assignment required optimizing a Python function for speed.",
+    "vignette": "For a high-performance computing course, a student had a Python function that used a slow, nested loop but produced the correct output. To improve its performance, they focused on refactoring this specific bottleneck. They provided the 15-line working code block to an AI assistant with the prompt to \"optimize this nested loop.\" The AI returned a more efficient version using a dictionary lookup. After validating that the new code produced the correct result on a sample input, the student directly replaced their original loop with the AI-generated fragment."
+  },
+  {
+    "id": 60,
+    "course": "A course on high-performance computing.",
+    "assignedTask": "The assignment required optimizing a Python function for speed.",
+    "vignette": "For a high-performance computing course, a student had a Python function that used a slow, nested loop but produced the correct output. To improve its performance, they focused on refactoring this specific bottleneck. They provided the 15-line working code block to an AI assistant with the prompt to \"optimize this nested loop.\" The AI returned a more efficient version using a dictionary lookup. The student used this output as a template, manually rewriting parts to handle an edge case, renaming variables to match their project's style, and adding comments before integrating it."
+  },
+  {
+    "id": 61,
+    "course": "A course on data visualization.",
+    "assignedTask": "Students were tasked with creating a data analysis notebook to explore and plot a given dataset.",
+    "vignette": "In a data visualization class, the assignment was to analyze and plot a dataset of housing prices. Starting with nothing but the dataset file, the student gave a high-level prompt to an AI agent: \"Using pandas and seaborn, write a full Jupyter Notebook that loads 'housing.csv', handles missing values by filling with the mean, and creates a scatter plot of price vs. area and a histogram of prices.\" The AI generated the entire notebook, including code cells and markdown explanations. The student ran the code to confirm it executed without errors and, after verifying the output matched the prompt, submitted the notebook as their completed work."
+  },
+  {
+    "id": 62,
+    "course": "A course on data visualization.",
+    "assignedTask": "Students were tasked with creating a data analysis notebook to explore and plot a given dataset.",
+    "vignette": "In a data visualization class, the assignment was to analyze and plot a dataset of housing prices. Starting with nothing but the dataset file, the student gave a high-level prompt to an AI agent: \"Using pandas and seaborn, write a full Jupyter Notebook that loads 'housing.csv', handles missing values by filling with the mean, and creates a scatter plot of price vs. area and a histogram of prices.\" The AI generated the entire notebook, including code cells and markdown explanations. Using this as a starting point, the student manually modified the code, changing the imputation method to use the median and adding a new correlation heatmap. They also rewrote the markdown sections to provide their own detailed analysis of the plots."
+  },
+  {
+    "id": 63,
+    "course": "An independent project or special topics course.",
+    "assignedTask": "Students needed to add a graphical user interface (GUI) to an existing command-line application.",
+    "vignette": "As part of an independent project, a student had already built a fully functional command-line tool in Python. To make it more user-friendly, they needed to add a GUI. They provided their working script to an AI agent and prompted it to \"build a complete front-end for this tool using the PyQt library.\" The agent generated a multi-class Python file containing code for windows, buttons, and text fields connected to the student's backend logic. The student then integrated this file into their project, making only minor corrections to import paths and variable names to ensure it ran correctly before submitting the work."
+  },
+  {
+    "id": 64,
+    "course": "An independent project or special topics course.",
+    "assignedTask": "Students needed to add a graphical user interface (GUI) to an existing command-line application.",
+    "vignette": "As part of an independent project, a student had already built a fully functional command-line tool in Python. To make it more user-friendly, they needed to add a GUI. They provided their working script to an AI agent and prompted it to \"build a complete front-end for this tool using the PyQt library.\" The agent generated a multi-class Python file containing code for windows, buttons, and text fields connected to the student's backend logic. Using this output as a starting point, the student then manually refactored the layout management, added custom input validation, and implemented an entirely new progress bar feature."
+  },
+  {
+    "id": 65,
+    "course": "A course on large-scale software development.",
+    "assignedTask": "Students were given a multi-file Java project with a broken build configuration and were told to fix it.",
+    "vignette": "In a software development course, a student was given a multi-file Java project with a broken build configuration and could not get it to compile. For the assignment, they provided the project directory to an AI agent, instructing it to generate a corrected pom.xml file. The AI analyzed the source code's import statements and project structure, producing a complete build file. The student then replaced their original pom.xml with the AI-generated version without any changes. Using this new file, they ran the build command and the project compiled successfully."
+  },
+  {
+    "id": 66,
+    "course": "A course on large-scale software development.",
+    "assignedTask": "Students were given a multi-file Java project with a broken build configuration and were told to fix it.",
+    "vignette": "In a software development course, a student was given a multi-file Java project with a broken build configuration and could not get it to compile. For the assignment, they provided the project directory to an AI agent, instructing it to generate a corrected pom.xml file. The AI analyzed the source code's import statements and project structure, producing a complete build file. Before using it, the student manually edited the file, updating several dependency versions to meet course-specific constraints and adding a required testing plugin. After making these modifications, they used their revised file to compile the project successfully."
+  },
+  {
+    "id": 67,
+    "course": "A course on software testing and quality assurance.",
+    "assignedTask": "The assignment was to write a comprehensive test suite for a provided, working application.",
+    "vignette": "In a software testing course, a student was tasked with writing a full test suite for a complete and correctly functioning Python application. Starting with a working solution but no tests, they provided their entire application to an AI agent. The student prompted it to \"Generate a complete test suite using the PyTest framework for this application, ensuring full coverage.\" The AI produced three new test files containing dozens of distinct test cases. The student reviewed the generated files, confirmed they ran without errors, and then submitted them as their completed work."
+  },
+  {
+    "id": 68,
+    "course": "A course on software testing and quality assurance.",
+    "assignedTask": "The assignment was to write a comprehensive test suite for a provided, working application.",
+    "vignette": "In a software testing course, a student was tasked with writing a full test suite for a complete and correctly functioning Python application. Starting with a working solution but no tests, they provided their entire application to an AI agent. The student prompted it to \"Generate a complete test suite using the PyTest framework for this application, ensuring full coverage.\" The AI produced three new test files containing dozens of distinct test cases. Using these files as a starting point, the student then manually debugged several tests and added new ones for complex edge cases the AI had missed, before submitting their heavily revised suite."
+  },
+  {
+    "id": 69,
+    "course": "A third-year course on scripting for system administration.",
+    "assignedTask": "Students were assigned to write a shell script to automate the process of finding and compressing log files older than 30 days.",
+    "vignette": "In a course on system administration, the assignment was to write a shell script to clean up old log files. The student started from scratch with no working code. Before writing a single line of the script, they first engaged in conceptual planning by outlining the logic on a whiteboard. They decomposed the problem into steps: find files by name pattern, filter them by modification date, loop through the results, and execute a compression command on each. This manual, AI-free planning stage produced a clear flowchart, which served as a blueprint for the subsequent implementation work."
+  },
+  {
+    "id": 70,
+    "course": "A course on data structures and algorithms.",
+    "assignedTask": "The assignment was to implement a function to find the median of two sorted arrays.",
+    "vignette": "For an algorithms course, a student had already implemented a correct and working solution that merged two arrays and found the median. While this approach passed all tests, its time complexity was suboptimal. The student then paused implementation for more conceptual planning. Without using AI, they read the textbook and worked on paper to understand a more efficient, binary-search-based approach. This conceptual exploration was about discovering a better algorithm and did not involve changing their existing code, but rather deciding whether a complete rewrite was feasible and worthwhile for extra credit."
+  },
+  {
+    "id": 71,
+    "course": "A second-year introductory data structures course.",
+    "assignedTask": "Students were asked to implement a basic Queue class from scratch using a linked list.",
+    "vignette": "In a second-year data structures course, the assignment was to implement a Queue class using a linked list foundation. Starting with an empty file, the student manually authored the entire implementation based on lecture notes. The work was purely production-focused: they first wrote the Node class, then the Queue class itself, including the enqueue, dequeue, and peek methods. They did not use any generative AI, relying only on their IDE's basic syntax highlighting and autocomplete features. The final deliverable was the .java file containing their From-scratch(not enough) implementation."
+  },
+  {
+    "id": 72,
+    "course": "A course on web development.",
+    "assignedTask": "The assignment involved adding new functionality to a given base web application.",
+    "vignette": "In a web development class, a student started with a provided web application that had a working user login system. The assignment was to add a new feature: a password reset function. The student performed this task by making a direct production change to the codebase. They manually wrote a new route handler in the backend server, created a corresponding HTML template for the user to enter their email, and implemented the logic to generate and send a reset token. No AI was used; the student substantively modified the working application to add the required functionality."
+  },
+  {
+    "id": 73,
+    "course": "An introductory programming course (CS1).",
+    "assignedTask": "Students needed to write a program that calculates final grades based on a list of scores, but it contained a logical error.",
+    "vignette": "In a CS1 course, a student wrote a program to calculate grades. Their code compiled but was producing incorrect averages, meaning it was a non-working draft. To find the bug, the student engaged in a quality assurance process without any AI assistance. They used the interactive debugger built into their IDE. By setting breakpoints and stepping through their code line-by-line, they were able to watch the values of their variables. This review process allowed them to discover a critical off-by-one error in their main calculation loop, which they then fixed manually."
+  },
+  {
+    "id": 74,
+    "course": "A scientific computing course.",
+    "assignedTask": "The goal was to implement a numerical simulation that was functionally correct but running too slowly.",
+    "vignette": "In a scientific computing class, a student wrote a simulation program that produced the correct output and passed all functional tests. However, the program was too slow to be practical for large datasets. To address this, the student focused on review and performance tuning. Using their IDE's integrated profiler, a non-generative tool, they analyzed their code's runtime behavior and identified a specific function with nested loops as the primary bottleneck. They then manually refactored that section of code, replacing the loops with a more efficient vectorized NumPy operation, significantly improving performance."
+  },
+  {
+    "id": 75,
+    "course": "A web programming course.",
+    "assignedTask": "Students were asked to write a Python script to scrape data from a public website.",
+    "vignette": "In a web programming course, a student's task within their team project was to write a web scraper. Before starting to code, they were unsure about the correct way to access website data and used an AI chatbot for conceptual planning. The student asked, \"What is the purpose of a robots.txt file and how do I respect it?\" The AI explained the protocol for ethical web scraping. Taking the explanation provided by the AI, the student directly formed their implementation strategy. They planned their script to check the robots.txt file and include delays between requests."
+  },
+  {
+    "id": 76,
+    "course": "A web programming course.",
+    "assignedTask": "Students were asked to write a Python script to scrape data from a public website.",
+    "vignette": "In a web programming course, a student's task within their team project was to write a web scraper. Before starting to code, they were unsure about the correct way to access website data and used an AI chatbot for conceptual planning. The student asked, \"What is the purpose of a robots.txt file and how do I respect it?\" After reviewing the AI's explanation, the student asked follow-up questions about edge cases, such as websites without a robots.txt file and interpreting Crawl-delay directives. Synthesizing insights from the full conversation, the student planned a more robust implementation strategy that handled a missing robots.txt file and adapted request timing."
+  },
+  {
+    "id": 77,
+    "course": "A data science course.",
+    "assignedTask": "Students needed to perform data analysis and cleaning on a provided dataset using Python.",
+    "vignette": "In a team-based data science project, the group had a working Jupyter notebook that used the pandas library for data cleaning. One student was exploring options for better performance and used an AI assistant to ask about the advantages of the Polars library. The AI's text explained Polars' parallel processing capabilities and performance gains. The student accepted this explanation of benefits. Based on that information, they recommended to their team that refactoring the code to use Polars was the best path forward to improve the notebook's efficiency."
+  },
+  {
+    "id": 78,
+    "course": "A data science course.",
+    "assignedTask": "Students needed to perform data analysis and cleaning on a provided dataset using Python.",
+    "vignette": "In a team-based data science project, the group had a working Jupyter notebook that used the pandas library for data cleaning. One student was exploring options for better performance and used an AI assistant to ask about the advantages of the Polars library. The AI's text explained Polars' parallel processing capabilities. The student then prompted for trade-offs, asking about API compatibility issues and potential learning curves. After synthesizing the AI's responses on both pros and cons, they concluded the migration effort was too high and recommended that the team stick with pandas for this project."
+  },
+  {
+    "id": 79,
+    "course": "An introductory course on databases.",
+    "assignedTask": "The assignment was to write a SQL query to retrieve data from multiple related tables.",
+    "vignette": "In an introductory databases course, a student on a project team needed to write a complex SQL query joining three tables. Starting from scratch, they were unsure about the correct syntax for a LEFT JOIN. They asked an AI assistant to \"explain the difference between an INNER JOIN and a LEFT JOIN,\" and the AI provided a text explanation with a generic example. The student mentally mapped their own table and column names directly onto the provided example's structure. They then switched to their SQL client and authored the production query by transcribing this mental model, implementing the join syntax precisely as the example had illustrated."
+  },
+  {
+    "id": 80,
+    "course": "An introductory course on databases.",
+    "assignedTask": "The assignment was to write a SQL query to retrieve data from multiple related tables.",
+    "vignette": "In an introductory databases course, a student on a project team needed to write a complex SQL query joining three tables. Starting from scratch, they were unsure about the correct syntax for a LEFT JOIN. They asked an AI assistant to \"explain the difference between an INNER JOIN and a LEFT JOIN,\" and the AI provided a text explanation with a generic example. After reading it, the student sketched out their specific table relationships on a whiteboard to trace the logic. This process revealed a potential ambiguity, so they added a specific WHERE clause to filter the results, a step not included in the AI's general-purpose example. They then wrote the final query integrating their custom filtering logic."
+  },
+  {
+    "id": 81,
+    "course": "A second-year programming course (CS2).",
+    "assignedTask": "Students were asked to extend a working program to include robust file I/O operations.",
+    "vignette": "In a second-year programming course, a student was responsible for the file I/O module in a team project. Their program was already functioning correctly, but the team needed to add basic error handling. To understand the correct approach, the student asked an AI assistant, \"What is the standard way to handle file-not-found errors in Python?\" The AI explained the try...except FileNotFoundError block. Following this explanation, the student implemented the solution by wrapping the open() call in their code with that specific exception handler, directly applying the described pattern to make the program more robust."
+  },
+  {
+    "id": 82,
+    "course": "A second-year programming course (CS2).",
+    "assignedTask": "Students were asked to extend a working program to include robust file I/O operations.",
+    "vignette": "In a second-year programming course, a student was responsible for the file I/O module in a team project. Their program was already functioning correctly, but the team needed to add comprehensive error handling. To understand the correct approach, the student asked an AI assistant, \"What is the standard way to handle file-not-found errors in Python?\" The AI explained the try...except FileNotFoundError block. Using the explanation as a starting point, the student then manually designed and implemented a more robust solution on their own, creating a multi-part block to also handle PermissionError and other potential IOError exceptions with distinct user messages for each."
+  },
+  {
+    "id": 83,
+    "course": "A course on systems programming.",
+    "assignedTask": "Students were to implement a program using pointers in C++, but it was producing a segmentation fault.",
+    "vignette": "In a systems programming course, a student on a team project was responsible for a C++ module that crashed with a segmentation fault. Starting with the non-working code, they pasted the error message into an AI assistant. The AI's text explained several common causes, including null pointer dereferencing and buffer overflows. Focusing on the potential cause the AI mentioned, the student began inspecting their code for a null pointer violation. After locating a single instance that matched this pattern, they applied a fix and committed the change to the team repository."
+  },
+  {
+    "id": 84,
+    "course": "A course on systems programming.",
+    "assignedTask": "Students were to implement a program using pointers in C++, but it was producing a segmentation fault.",
+    "vignette": "In a systems programming course, a student on a team project was responsible for a C++ module that crashed with a segmentation fault. Starting with the non-working code, they pasted the error message into an AI assistant. The AI's text explained several common causes, including null pointer dereferencing and buffer overflows. Using these concepts as a guide, the student devised their own diagnostic plan. They returned to their code and manually inserted print statements at several key points to trace variable states and identify the exact location where memory became invalid. This systematic, self-directed investigation led them to the root cause, which they then fixed and committed."
+  },
+  {
+    "id": 85,
+    "course": "A Python for data science course.",
+    "assignedTask": "Students were asked to write a script to process data, which was already working correctly.",
+    "vignette": "In a data science course, a student was reviewing code for their team project. They found a working Python script that used a complex, nested list comprehension that was difficult to read. For a quality review, they asked an AI assistant, \"What are general strategies to make a complex Python list comprehension more readable?\" The AI's explanation offered two common alternatives: breaking it into multiple lines or rewriting it as a standard for loop. The student identified the for loop as the most straightforward option presented. Following that specific recommendation, they manually rewrote the section of code as a multi-line loop and submitted the change."
+  },
+  {
+    "id": 86,
+    "course": "A Python for data science course.",
+    "assignedTask": "Students were asked to write a script to process data, which was already working correctly.",
+    "vignette": "In a team data science project, a student's Python script for data processing was working correctly but used a dense, nested list comprehension. To improve readability for their teammates, they asked an AI assistant for strategies to make the code clearer. The AI explained two common alternatives: breaking the comprehension into multiple lines or rewriting it as a standard for-loop. The student used this advice as a conceptual starting point for a more robust solution. They manually designed and implemented a new helper function that encapsulated the complex filtering logic, adding a clear docstring explaining its purpose. This refactoring not only simplified the main script but also made the logic reusable elsewhere in the project."
+  },
+  {
+    "id": 87,
+    "course": "A web development course.",
+    "assignedTask": "Students had to implement a user registration form that included input validation.",
+    "vignette": "In a team-based web development project, a student was tasked with implementing a user registration form with input validation. Starting the email validation feature from scratch, they used an AI tool to generate the necessary logic. The AI provided a short JavaScript function—about 10 lines of code—that used a regular expression to validate email formats. The student tested the function with a few common email addresses, saw that it worked as expected, and integrated the generated code block directly into the team's user interface component without any changes."
+  },
+  {
+    "id": 88,
+    "course": "A web development course.",
+    "assignedTask": "Students had to implement a user registration form that included input validation.",
+    "vignette": "In a team-based web development project, a student was tasked with implementing a user registration form with input validation. Starting the email validation feature from scratch, they used an AI tool to generate the necessary logic. The AI provided a short JavaScript function—about 10 lines of code—that used a regular expression to validate email formats. The student manually refactored the generated code, adding comments to explain the complex regex for their teammates. They also expanded the function to handle more edge cases, such as email addresses with subdomains, and modified it to return more specific error messages for the user interface."
+  },
+  {
+    "id": 89,
+    "course": "A data analysis course.",
+    "assignedTask": "The assignment was to add a data export feature to an existing data processing script.",
+    "vignette": "In a team-based data analysis course, a student was tasked with adding a feature to their group's project. Their Python script already performed the core calculations correctly, but they needed to add a function to export the final results to a CSV file. The student prompted an AI assistant to \"write a Python function that takes a list of dictionaries and a filename, and saves the data to a CSV.\" The AI generated a self-contained function of about 20 lines. After confirming the generated code met the prompt's request, the student integrated the function directly into the project's codebase without modification."
+  },
+  {
+    "id": 90,
+    "course": "A data analysis course.",
+    "assignedTask": "The assignment was to add a data export feature to an existing data processing script.",
+    "vignette": "In a team-based data analysis course, a student was tasked with adding a feature to their group's project. Their Python script already performed the core calculations correctly, but they needed to add a function to export the final results to a CSV file. The student prompted an AI assistant to \"write a Python function that takes a list of dictionaries and a filename, and saves the data to a CSV.\" The AI generated a self-contained function of about 20 lines. Using this code as a starting point, the student then manually added exception handling for file-write errors and refactored the variable names to align with the project's coding conventions before integrating the improved function into the codebase."
+  },
+  {
+    "id": 91,
+    "course": "A course on data structures and algorithms.",
+    "assignedTask": "Students were asked to implement an insertion sort algorithm, but their version had a bug.",
+    "vignette": "In a sophomore-level software engineering course, a team was building a data visualization tool. One student was responsible for a utility module, but their implementation of insertion sort was failing the team's unit tests. Having a non-working draft, they isolated the broken inner loop—a block of about 10 lines. As a QA step, they pasted this code into an AI assistant, asking it to find the bug. The AI provided a corrected version of the loop with a fix to the boundary condition. The student directly replaced their buggy code with the AI-generated snippet, confirmed the tests now passed, and committed the fix to the team repository."
+  },
+  {
+    "id": 92,
+    "course": "A course on data structures and algorithms.",
+    "assignedTask": "Students were asked to implement an insertion sort algorithm, but their version had a bug.",
+    "vignette": "In a sophomore-level software engineering course, a team was building a data visualization tool. One student was responsible for a utility module, but their implementation of insertion sort was failing the team's unit tests. Having a non-working draft, they isolated the broken inner loop—a block of about 10 lines. As a QA step, they pasted this code into an AI assistant, asking it to find the bug. The AI provided a corrected version of the loop. After examining the AI's logic, the student manually rewrote the section themselves, applying the conceptual fix but using their own variable names and structure to better match the project's established coding style before committing the change."
+  },
+  {
+    "id": 93,
+    "course": "A course on high-performance computing.",
+    "assignedTask": "The assignment required optimizing a Python function for speed.",
+    "vignette": "In a high-performance computing course, a student was assigned a performance optimization ticket for their team's project. Their task was to refactor a specific function that used a slow, nested loop but already passed all unit tests. They provided the 15-line inefficient code block to an AI assistant, asking it to optimize the loop. The AI returned a more efficient version using a dictionary lookup, which had a better time complexity. The student validated that the AI's logic was correct and, after confirming it passed the existing tests, copied the generated code block directly into the project codebase."
+  },
+  {
+    "id": 94,
+    "course": "A course on high-performance computing.",
+    "assignedTask": "The assignment required optimizing a Python function for speed.",
+    "vignette": "In a high-performance computing course, a student was assigned a performance optimization ticket for their team's project. Their task was to refactor a specific function that used a slow, nested loop but already passed all unit tests. They provided the 15-line inefficient code block to an AI assistant, asking it to optimize the loop. The AI returned an efficient version using a dictionary lookup. Recognizing the AI's concept was sound but incomplete, the student manually rewrote the fragment, integrating the core idea but using a different data structure and adding custom error handling for edge cases specific to their codebase."
+  },
+  {
+    "id": 95,
+    "course": "A course on data visualization.",
+    "assignedTask": "Students were tasked with creating a data analysis notebook to explore and plot a given dataset.",
+    "vignette": "In a data visualization class, the assignment was to analyze and plot a dataset of housing prices. Starting with the dataset file, the student prompted an AI agent: \"Using pandas and seaborn, write a full Jupyter Notebook that loads 'housing.csv', handles missing values by filling with the mean, and creates a scatter plot and a histogram.\" The AI produced the entire notebook, including code cells and markdown explanations. The student executed the notebook from top to bottom, confirmed that it ran without errors and produced the requested plots, and then submitted the generated file as their completed work."
+  },
+  {
+    "id": 96,
+    "course": "A course on data visualization.",
+    "assignedTask": "Students were tasked with creating a data analysis notebook to explore and plot a given dataset.",
+    "vignette": "In a data visualization class, the assignment was to analyze and plot a dataset of housing prices. Starting with the dataset file, the student prompted an AI agent: \"Using pandas and seaborn, write a full Jupyter Notebook that loads 'housing.csv', handles missing values by filling with the mean, and creates a scatter plot and a histogram.\" The AI produced the entire notebook. Using this output as a starting point, the student then manually revised the analysis. They replaced the mean-imputation with a median-based approach and added a new heatmap to visualize feature correlations, rewriting the markdown sections to provide their own interpretations."
+  },
+  {
+    "id": 97,
+    "course": "An independent project or special topics course.",
+    "assignedTask": "Students needed to add a graphical user interface (GUI) to an existing command-line application.",
+    "vignette": "As part of an independent project, a student had built a fully functional command-line tool in Python. To make it more user-friendly, they needed to add a GUI. They provided their entire working script to an AI agent and prompted it to \"build a complete front-end for this tool using the PyQt library.\" The agent generated a new, multi-class Python file that created the interface and connected it to the student's backend logic. The student reviewed the generated code for basic functionality, confirmed the interface elements worked as expected, and integrated the new file directly into their project's codebase without any architectural changes."
+  },
+  {
+    "id": 98,
+    "course": "An independent project or special topics course.",
+    "assignedTask": "Students needed to add a graphical user interface (GUI) to an existing command-line application.",
+    "vignette": "As part of an independent project, a student had built a fully functional command-line tool in Python. To make it more user-friendly, they needed to add a GUI. They provided their entire working script to an AI agent and prompted it to \"build a complete front-end for this tool using the PyQt library.\" The agent generated a new, multi-class Python file that created the interface and connected it to the student's backend logic. The student treated this file as a starting scaffold, manually refactoring the UI code to better separate layout from event handling and adding custom error-checking logic that was absent from the original generation."
+  },
+  {
+    "id": 99,
+    "course": "A course on large-scale software development.",
+    "assignedTask": "Students were given a multi-file Java project with a broken build configuration and were told to fix it.",
+    "vignette": "In a software development course, a team was assigned a complex Java project that would not compile due to a misconfigured Maven pom.xml file. The project was effectively non-functional. To fix this, a student provided the project directory to an AI agent and prompted it to generate a corrected pom.xml. The AI analyzed the source code and dependencies, producing a new, complete build file. The student then replaced the original broken file with the one generated by the AI. After this action, the project compiled successfully without any further changes to the configuration."
+  },
+  {
+    "id": 100,
+    "course": "A course on large-scale software development.",
+    "assignedTask": "Students were given a multi-file Java project with a broken build configuration and were told to fix it.",
+    "vignette": "In a software development course, a team was assigned a complex Java project that would not compile due to a misconfigured Maven pom.xml file. The project was effectively non-functional. To fix this, a student provided the project directory to an AI agent and prompted it to generate a corrected pom.xml. The AI produced a file that allowed the project to build. The student then manually edited this file to pin specific dependency versions for stability, add a new build profile for integration testing, and integrate a static analysis plugin. The resulting configuration was a substantial revision of the AI's initial output."
+  },
+  {
+    "id": 101,
+    "course": "A course on software testing and quality assurance.",
+    "assignedTask": "The assignment was to write a comprehensive test suite for a provided, working application.",
+    "vignette": "In a software testing course, a student needed to create a test suite for a provided, working application. Using an AI agent capable of code analysis, they supplied the entire codebase and prompted it: \"Generate a complete test suite using the PyTest framework for this application.\" The AI produced three new test files containing dozens of distinct test cases. After running the generated suite once to confirm it executed without errors, the student bundled the files and submitted them as their completed assignment."
+  },
+  {
+    "id": 102,
+    "course": "A course on software testing and quality assurance.",
+    "assignedTask": "The assignment was to write a comprehensive test suite for a provided, working application.",
+    "vignette": "In a software testing course, a student needed to create a test suite for a provided, working application. Using an AI agent capable of code analysis, they supplied the entire codebase and prompted it: \"Generate a complete test suite using the PyTest framework for this application.\" The AI produced three new test files containing dozens of distinct test cases. After reviewing the output, the student identified a lack of edge case testing. They then manually authored several new tests to validate input boundaries and assert specific error conditions, integrating them into the AI-generated files before submitting the more robust suite."
+  }
+]
