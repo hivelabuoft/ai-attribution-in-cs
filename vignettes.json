@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "course": "An introductory course on cybersecurity.",
-    "assignedTask": "The assignment was to create a basic threat model for a simple web application described in the prompt.",
+    "course": "A second-year course on Human-Computer Interaction (HCI).",
+    "assignedTask": "Students were asked to develop a plan for a new mobile application, including defining the primary user flow.",
     "vignette": "In a second-year HCI course, the assignment was to design the core user flow for a new mobile application concept. Starting entirely from scratch, the student had only a vague idea for a language-learning app. Without using any generative AI, they spent the initial phase brainstorming on paper, sketching out different screen sequences and decision points for the user registration and first-lesson experience. This conceptual work focused on planning the app's structure and enumerating the necessary features. The student's primary deliverable was a set of these hand-drawn diagrams and notes that outlined the application's logic before any digital wireframing would begin."
   },
   {
     "id": 2,
-    "course": "An introductory course on cybersecurity.",
-    "assignedTask": "The assignment was to create a basic threat model for a simple web application described in the prompt.",
+    "course": "A senior-level software architecture course.",
+    "assignedTask": "Students needed to propose and justify an architecture for a large-scale data processing system.",
     "vignette": "For a senior software architecture class, a student had already completed a detailed and valid design document proposing a microservices-based system. Seeking to improve their justification, the student engaged in further conceptual planning without using AI. They manually researched alternative patterns, such as a monolithic architecture with a modular design, and created a private document outlining the pros and cons of this alternative compared to their original choice. This exploration was purely for conceptual comparison to strengthen their final report's discussion section, and did not involve changing the already-working design."
   },
   {
     "id": 3,
-    "course": "An introductory course on cybersecurity.",
-    "assignedTask": "The assignment was to create a basic threat model for a simple web application described in the prompt.",
+    "course": "A third-year course on algorithms.",
+    "assignedTask": "The task was to write detailed pseudocode for Dijkstra's algorithm to find the shortest path in a weighted graph.",
     "vignette": "In a third-year algorithms course, the assignment was to produce detailed pseudocode for Dijkstra's algorithm. The student began from scratch, working from their understanding from lectures and the textbook. Using a simple text editor without any AI assistance, they carefully authored the algorithm line-by-line. The core of their work involved the direct production of the design artifact, defining the data structures for the priority queue and graph representation, and specifying the main loop's logic. This manual process of writing the pseudocode constituted the entire deliverable, translating the conceptual algorithm into a formal, pre-implementation plan."
   },
   {
     "id": 4,
-    "course": "An introductory course on cybersecurity.",
-    "assignedTask": "The assignment was to create a basic threat model for a simple web application described in the prompt.",
+    "course": "A course on database design and management.",
+    "assignedTask": "Students were instructed to optimize an existing relational schema for a specific query pattern.",
     "vignette": "In a database design course, a student was given a fully normalized and working relational schema for an e-commerce site. The task was to modify the design to improve performance for frequent queries about product sales by region. The student identified that joining several tables was a bottleneck. To optimize, they made a production change by manually altering the schema, denormalizing it by adding a region_name column directly to the Sales table. This modification to the design artifact was done without any AI tools and directly addressed the assignment's goal of producing an improved, though less normalized, schema."
   },
   {
