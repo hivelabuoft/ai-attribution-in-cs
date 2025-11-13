@@ -177,8 +177,8 @@ function generateTextHTML(vignette) {
             </div>
         </div>
 
-        <a href="${id}.html" class="nav-link">
-            View Full Interactive Version →
+        <a href="${id}.html" class="nav-link" target="_blank" rel="noopener noreferrer">
+            Open in External Window for Record →
         </a>
     </div>
 </body>
