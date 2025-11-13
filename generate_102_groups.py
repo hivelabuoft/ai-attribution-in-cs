@@ -242,13 +242,28 @@ def generate_groups(input_file, output_file):
                         new_group['FlowID'] = f'FL_{teaching_flow_id}'
                         teaching_flow_id += 1
                         
-                        # Update nested FlowIDs
+                        # Update nested FlowIDs and block references
                         if 'Flow' in new_group:
-                            for flow_item in new_group['Flow']:
+                            for i, flow_item in enumerate(new_group['Flow']):
                                 flow_item['FlowID'] = f'FL_{teaching_flow_id}'
                                 teaching_flow_id += 1
+                                
+                                # Update block IDs to reference unique blocks for each scenario
+                                # Teaching branch doesn't have iframe blocks, just per-vig and post-vig
+                                if i == 0:  # per-vignette block
+                                    flow_item['ID'] = f'BL_PerVig_T{group_num}'
+                                elif i == 1:  # post-vig-reflect block
+                                    flow_item['ID'] = f'BL_PostVig_T{group_num}'
                         
                         teaching_all_groups.append(new_group)
+                    
+                    # Also update S1 group to reference unique teaching blocks
+                    if 'Flow' in s1_group_copy:
+                        for i, flow_item in enumerate(s1_group_copy['Flow']):
+                            if i == 0:  # per-vignette block
+                                flow_item['ID'] = 'BL_PerVig_T1'
+                            elif i == 1:  # post-vig-reflect block
+                                flow_item['ID'] = 'BL_PostVig_T1'
                     
                     # Remove the old S1 group
                     teaching_flow.pop(teaching_s1_index)
@@ -281,42 +296,137 @@ def generate_groups(input_file, output_file):
     if not blocks:
         print("Warning: Could not find blocks element")
     else:
-        # Find S1 and S2 blocks as templates
+        # Find S1 and S2 blocks, per-vignette block, and post-vig-reflect block as templates
         blocks_payload = blocks.get('Payload', [])
         s1_block = None
         s2_block = None
+        per_vig_block = None
+        post_vig_block = None
         
         for block in blocks_payload:
-            if block.get('Description') == 'S1':
+            desc = block.get('Description', '')
+            if desc == 'S1':
                 s1_block = block
-            elif block.get('Description') == 'S2':
+            elif desc == 'S2':
                 s2_block = block
+            elif 'per-vignette' in desc.lower() or desc == 'per-vig':
+                per_vig_block = block
+            elif 'post-vig' in desc.lower():
+                post_vig_block = block
         
         if s1_block:
+            # First, create unique per-vignette and post-vig blocks for S1 and S2
+            if per_vig_block and post_vig_block:
+                # Create per-vignette-S1
+                per_vig_s1 = json.loads(json.dumps(per_vig_block))
+                per_vig_s1['Description'] = 'per-vignette-S1'
+                per_vig_s1['ID'] = 'BL_PerVig_S1'
+                
+                # Create per-vignette-S2
+                per_vig_s2 = json.loads(json.dumps(per_vig_block))
+                per_vig_s2['Description'] = 'per-vignette-S2'
+                per_vig_s2['ID'] = 'BL_PerVig_S2'
+                
+                # Create post-vig-reflect-S1
+                post_vig_s1 = json.loads(json.dumps(post_vig_block))
+                post_vig_s1['Description'] = 'post-vig-reflect-S1'
+                post_vig_s1['ID'] = 'BL_PostVig_S1'
+                
+                # Create post-vig-reflect-S2
+                post_vig_s2 = json.loads(json.dumps(post_vig_block))
+                post_vig_s2['Description'] = 'post-vig-reflect-S2'
+                post_vig_s2['ID'] = 'BL_PostVig_S2'
+                
+                # Add these to blocks
+                blocks_payload.extend([per_vig_s1, per_vig_s2, post_vig_s1, post_vig_s2])
+                
+                # Update S1 and S2 groups to reference their unique blocks
+                for group in existing_groups:
+                    if group['Description'] == 'S1' and 'Flow' in group and len(group['Flow']) >= 3:
+                        group['Flow'][1]['ID'] = 'BL_PerVig_S1'
+                        group['Flow'][2]['ID'] = 'BL_PostVig_S1'
+                    elif group['Description'] == 'S2' and 'Flow' in group and len(group['Flow']) >= 3:
+                        group['Flow'][1]['ID'] = 'BL_PerVig_S2'
+                        group['Flow'][2]['ID'] = 'BL_PostVig_S2'
+                
+                print(f"✓ Created unique per-vignette and post-vig blocks for S1 and S2")
+            
             # Create new blocks for S3-S102
-            new_blocks = []
+            new_s_blocks = []
+            new_per_vig_blocks = []
+            new_post_vig_blocks = []
             
             for block_num in range(3, 103):
-                new_block = json.loads(json.dumps(s1_block))  # Deep copy
-                new_block['Description'] = f'S{block_num}'
-                new_block['ID'] = f'BL_S{block_num}Generated'  # Unique block ID
+                # Create Sn block (iframe)
+                new_s_block = json.loads(json.dumps(s1_block))  # Deep copy
+                new_s_block['Description'] = f'S{block_num}'
+                new_s_block['ID'] = f'BL_S{block_num}Generated'  # Unique block ID
                 
                 # Update the question ID in BlockElements
                 qid_for_block = f'QID{52 + block_num}'
-                new_block['BlockElements'] = [{"Type": "Question", "QuestionID": qid_for_block}]
+                new_s_block['BlockElements'] = [{"Type": "Question", "QuestionID": qid_for_block}]
                 
-                new_blocks.append(new_block)
+                new_s_blocks.append(new_s_block)
                 
-                # Update the Flow reference in the group to use this new block
+                # Create unique per-vignette block for this scenario
+                if per_vig_block:
+                    new_per_vig = json.loads(json.dumps(per_vig_block))  # Deep copy
+                    new_per_vig['Description'] = f'per-vignette-S{block_num}'
+                    new_per_vig['ID'] = f'BL_PerVig_S{block_num}'
+                    # Keep all the same questions - just copy the BlockElements as-is
+                    new_per_vig_blocks.append(new_per_vig)
+                
+                # Create unique post-vig-reflect block for this scenario
+                if post_vig_block:
+                    new_post_vig = json.loads(json.dumps(post_vig_block))  # Deep copy
+                    new_post_vig['Description'] = f'post-vig-reflect-S{block_num}'
+                    new_post_vig['ID'] = f'BL_PostVig_S{block_num}'
+                    # Keep all the same questions - just copy the BlockElements as-is
+                    new_post_vig_blocks.append(new_post_vig)
+                
+                # Update the Flow references in the group to use these new blocks
                 for group in new_groups:
                     if group['Description'] == f'S{block_num}':
-                        # Update first flow item to reference this block
-                        if 'Flow' in group and len(group['Flow']) > 0:
-                            group['Flow'][0]['ID'] = new_block['ID']
+                        if 'Flow' in group and len(group['Flow']) >= 3:
+                            # Update block IDs for all three blocks in the group
+                            group['Flow'][0]['ID'] = new_s_block['ID']  # Sn block
+                            if per_vig_block:
+                                group['Flow'][1]['ID'] = f'BL_PerVig_S{block_num}'  # per-vignette
+                            if post_vig_block:
+                                group['Flow'][2]['ID'] = f'BL_PostVig_S{block_num}'  # post-vig-reflect
             
             # Add new blocks to the blocks payload
-            blocks_payload.extend(new_blocks)
-            print(f"✓ Created {len(new_blocks)} new blocks (S3-S102) with iframe questions")
+            blocks_payload.extend(new_s_blocks)
+            blocks_payload.extend(new_per_vig_blocks)
+            blocks_payload.extend(new_post_vig_blocks)
+            print(f"✓ Created {len(new_s_blocks)} new S blocks (S3-S102) with iframe questions")
+            print(f"✓ Created {len(new_per_vig_blocks)} new per-vignette blocks (unique for each scenario)")
+            print(f"✓ Created {len(new_post_vig_blocks)} new post-vig-reflect blocks (unique for each scenario)")
+            
+            # Now create Teaching branch blocks (T1-T102)
+            # Teaching branch doesn't have iframe blocks, only per-vignette and post-vig-reflect
+            teaching_per_vig_blocks = []
+            teaching_post_vig_blocks = []
+            
+            if per_vig_block and post_vig_block:
+                for block_num in range(1, 103):
+                    # Create unique per-vignette block for Teaching scenario
+                    new_teaching_per_vig = json.loads(json.dumps(per_vig_block))
+                    new_teaching_per_vig['Description'] = f'per-vignette-T{block_num}'
+                    new_teaching_per_vig['ID'] = f'BL_PerVig_T{block_num}'
+                    teaching_per_vig_blocks.append(new_teaching_per_vig)
+                    
+                    # Create unique post-vig-reflect block for Teaching scenario
+                    new_teaching_post_vig = json.loads(json.dumps(post_vig_block))
+                    new_teaching_post_vig['Description'] = f'post-vig-reflect-T{block_num}'
+                    new_teaching_post_vig['ID'] = f'BL_PostVig_T{block_num}'
+                    teaching_post_vig_blocks.append(new_teaching_post_vig)
+                
+                # Add Teaching branch blocks
+                blocks_payload.extend(teaching_per_vig_blocks)
+                blocks_payload.extend(teaching_post_vig_blocks)
+                print(f"✓ Created {len(teaching_per_vig_blocks)} Teaching per-vignette blocks (T1-T102)")
+                print(f"✓ Created {len(teaching_post_vig_blocks)} Teaching post-vig-reflect blocks (T1-T102)")
     
     # Write the modified QSF file
     with open(output_file, 'w', encoding='utf-8') as f:
